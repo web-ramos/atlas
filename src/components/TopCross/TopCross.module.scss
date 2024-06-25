@@ -1,0 +1,24 @@
+.container {
+  width: 100%;
+  max-width: var(--container-xxl);
+  padding: 40px 32px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  column-gap: 16px;
+}
+
+.phone {
+  display: block;
+  font-size: 14px;
+  font-weight: 400;
+  color: #16324C;
+  font-family: 'Montserrat', sans-serif;
+
+}
+
+.crossButton {
+  display: block;
+  border: none;
+  background: none;
+}
