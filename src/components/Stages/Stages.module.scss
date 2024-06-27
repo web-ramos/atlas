@@ -1,0 +1,43 @@
+.container {
+  padding: 100px 48px;
+}
+
+.tip {
+  font-family: 'Cormorant', serif;
+  font-size: 40px;
+  line-height: 48px;
+  font-weight: 500;
+  margin-bottom: 220px;
+}
+
+.stage {
+  &__item {
+
+  }
+  &__name {
+      font-family: 'Cormorant', serif;
+      font-size: 40px;
+      line-height: 48px;
+      font-weight: 500;
+    &_wrapper {
+      flex-basis: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      flex-wrap: wrap;
+      column-gap: 20px;
+      padding-bottom: 16px;
+      margin-bottom: 24px;
+      border-bottom: 1px solid var(--color-map-blue);
+      &_active {
+        padding-bottom: 24px;
+        margin-bottom: 16px;
+      }
+    }
+    &_active {
+      font-size: 24px;
+      line-height: 34px;
+      font-weight: 500;
+    }
+  }
+}

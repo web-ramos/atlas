@@ -14,7 +14,7 @@ const Footer = (props : propsFooter) => {
   return (
     active ?
     <>
-      <footer>
+      <footer className={styles.footer}>
         <div className={styles.container}>
           <div className={styles.actions}>
             <Button link={backLink || "#"} text={'Back'} />

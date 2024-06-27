@@ -14,7 +14,7 @@ const TopCross = () => {
       <a className={styles.phone} href={phoneLink}>{fake.phone}</a>
       <button className={styles.crossButton}>
         <Link href='#'>
-          <Image priority src={crossIcon} alt='Close' />
+          <Image priority src={crossIcon} alt='Close' width={44} height={44}/>
         </Link>
       </button>
     </div>

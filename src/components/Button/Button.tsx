@@ -8,12 +8,18 @@ interface propsButton {
   rounded?: boolean
 }
 
-
 const Button = (props: propsButton) => {
   const { link, text, active, rounded} = props
 
+
   return (
-    <button className={styles.button}>
+    <button
+      className={`
+        ${styles.button}
+        ${active ? styles.button__active : ""}
+        ${rounded ? styles.button__rounded : ""}
+      `}
+    >
       <Link href={link}>{text}</Link>
     </button>
   );

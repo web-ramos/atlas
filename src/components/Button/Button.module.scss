@@ -1,0 +1,28 @@
+.button {
+  height: 50px;
+  border-radius: 8px;
+  border: 2px solid var(--color-atlas-blue);
+  color: var(--color-atlas-blue);
+  background-color: white;
+  font-size: 16px;
+  min-width: 115px;
+  // padding: 24px 0;
+  &__active {
+    color: white;
+    background-color: var(--color-atlas-blue);
+  }
+  &__rounded {
+    border-radius: 25px;
+    a {
+      padding: 0 64px;
+    }
+  }
+  a {
+    height: 100%;
+    width: 100%;
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

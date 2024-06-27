@@ -83,15 +83,19 @@ const Stages = ( {stageCurrent = Stage.SUMMARY} : propsStages) => {
     if (stageCurrent == stageItem.id ) {
       return (
         <>
-          <div>{stageItem.name ?? stageItem.nameActive}</div>
-          {valueRender(stageItem)}
-          <div>{stageItem.tip}</div>
+          <div className={`${styles.stage__name_wrapper} ${styles.stage__name_wrapper_active}`}>
+            <div className={styles.stage__name_active}>{stageItem.name ?? stageItem.nameActive}</div>
+            {valueRender(stageItem)}
+          </div>
+          <div className={styles.tip}>{stageItem.tip}</div>
         </>
       );
     } else {
       return (
         <>
-          <div>{stageItem.name}</div>
+          <div className={styles.stage__name_wrapper}>
+            <div className={styles.stage__name}>{stageItem.name}</div>
+          </div>
         </>
       )
     }
@@ -99,10 +103,10 @@ const Stages = ( {stageCurrent = Stage.SUMMARY} : propsStages) => {
 
   return (
     <>
-      <nav>
+      <nav className={styles.container}>
         {stageList.map((stageItem) => {
           return (
-            <div key={stageItem.id}>
+            <div key={stageItem.id} className={styles.stage__item}>
               {itemRender(stageItem)}
             </div>
           )

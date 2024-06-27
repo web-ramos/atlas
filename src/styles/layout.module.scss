@@ -1,6 +1,5 @@
 .wrapper {
   margin: 0 auto;
-  max-width: var(--container-xxl);
   display: flex;
 }
 
@@ -8,11 +7,21 @@
   background-color: var(--color-atlas-blue);
   color: white;
   flex: 1 1 37%;
-  max-width: 530px;
-  padding: 100px 48px;
+  display: flex;
+  justify-content: flex-end;
+  &__wrapper {
+    width: 100%;
+    max-width: 530px;
+  }
 }
 
 .main {
   flex: 1 1 63%;
-  padding: 0 32px;
+  display: flex;
+  justify-content: flex-start;
+  &__wrapper {
+      padding: 0 32px;
+      max-width: 910px;
+      width: 100%;
+  }
 }
